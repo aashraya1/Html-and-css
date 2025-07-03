@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Now - Aashraya Hotel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Aashraya Hotel</h1>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="index.html#rooms">Rooms</a>
+          <a href="about.html">About</a>
+          <a href="book.html">Book Now</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="booking">
+      <div class="container">
+        <h2>Book Your Stay at Aashraya Hotel</h2>
+        <form>
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="checkin">Check-In Date</label>
+          <input type="date" id="checkin" name="checkin" required />
+
+          <label for="checkout">Check-Out Date</label>
+          <input type="date" id="checkout" name="checkout" required />
+
+          <label for="room">Room Type</label>
+          <select id="room" name="room">
+            <option value="standard">Standard Room</option>
+            <option value="deluxe">Deluxe Room</option>
+            <option value="suite">Suite</option>
+          </select>
+
+          <label for="guests">Number of Guests</label>
+          <input
+            type="number"
+            id="guests"
+            name="guests"
+            min="1"
+            max="10"
+            required
+          />
+
+          <button type="submit">Submit Booking</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Aashraya Hotel. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url('hm.jpg');
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin: auto;
+}
+
+header {
+  background-color: #272626;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.hero {
+  background: url('https://via.placeholder.com/1200x400') center/cover no-repeat;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  background-color: #272626;
+  padding: 30px;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.rooms {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.rooms h2 {
+  margin-bottom: 30px;
+}
+
+.room-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.info {
+  background-color: #fff;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+.info img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.booking {
+  background-image: url(hm.jpg);
+  padding: 60px 20px;
+  background-color: #fff;
+  color: #333;
+}
+
+.booking h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+form{
+  display: flex; /*everything appears in single row*/
+  flex-direction: column; /*sabbai column ko form ma aauxa*/
+  margin: auto; /*only has effect after flex is used, middle ma aauxa*/
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input,
+form select {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #e05600;
+}
